@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+    int n1, n2, product, sum;
+    scanf("%d", &n1);
+    scanf("%d", &n2);
+    product = n1 * n2;
+    if (product > 1000) 
+    {
+        sum = n1 + n2;
+        printf("%d\n", sum);
+    }
+    else 
+    {
+        printf("%d\n", product);
+    }
+
+    
+    return 0;
+}
