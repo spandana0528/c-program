@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class insertelement {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        for(int i = 0; i < n - 1; i++) {
+            a[i] = sc.nextInt();
+        }
+        a[n - 1] = sc.nextInt();
+        int m = a[n - 1];
+        int j = n - 2;
+        while(j >= 0 && a[j] > m) {
+            a[j + 1] = a[j];
+            j--;
+        }
+        a[j + 1] = m;
+        for(int i = 0; i < n; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
