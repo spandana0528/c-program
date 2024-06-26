@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+    int userpoints;
+    scanf("%d", &userpoints);
+    if (userpoints < 30 || userpoints > 100)
+    {
+        printf("Invalid Input\n");
+    } 
+    else
+    {
+        if (userpoints >= 30 && userpoints <= 50)
+        {
+            printf("Average\n");
+        } 
+        else
+            if (userpoints >= 51 && userpoints <= 60)
+            {
+            printf("Good\n");
+        } 
+        else 
+            if (userpoints >= 61 && userpoints <= 80)
+            {
+            printf("Excellent\n");
+        }
+        else
+            if (userpoints >= 81 && userpoints <= 100) 
+            {
+            printf("Outstanding\n");
+        }
+    }
+
+    return 0;
+}
+
+
